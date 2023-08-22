@@ -1,0 +1,151 @@
+body {	
+	--u: 1.185vmin;
+	--hue: hue-rotate(0deg);
+	--c1: #000000;
+	--c2: hsl(359, 66%, 36%);
+	--c3: #e35e13;
+	--gp: 50%/calc(var(--u) * 12) calc(var(--u) * 17.05);
+	height: 100vh;
+	filter: var(--hue);
+	background: 
+		conic-gradient(from 0deg at 13.68% 94.08%, #fff0 0 50%, var(--c2) 0% 83.33%, #fff0 0 100%)  var(--gp),  /* left red end */
+		conic-gradient(from 0deg at 86.12% 94.08%, #fff0 0 16.66%, var(--c2) 0% 50%, #fff0 0 100%)  var(--gp),  /* right red end */
+		conic-gradient(from 0deg at 28.42% 88.14%, #fff0 0 50%, var(--c1) 0% 83.33%, #fff0 0 100%)  var(--gp),  /* left black end */
+		conic-gradient(from 0deg at 71.57% 88.14%, #fff0 0 16.66%, var(--c1) 0% 50%, #fff0 0 100%)  var(--gp),  /* right black end */
+		conic-gradient(from 0deg at 7.36% 43.70%, #fff0 0 50%, var(--c1) 0% 75%, #fff0 0 100%)  var(--gp),  /* left black vert*/
+		conic-gradient(from 0deg at 92.64% 43.70%, #fff0 0 25%, var(--c1) 0% 50%, #fff0 0 100%)  var(--gp),  /* right black vert */
+		conic-gradient(from 0deg at 43.15% 82.22%, #fff0 0 50%, var(--c3) 0% 83.33%, #fff0 0 100%)  var(--gp),  /* left orange end */
+		conic-gradient(from 0deg at 56.84% 82.22%, #fff0 0 16.66%, var(--c3) 0% 50%, #fff0 0 100%)  var(--gp),  /* right orange end */
+		conic-gradient(from 0deg at 23.15% 50.37%, #fff0 0 50%, var(--c3) 0% 75%, #fff0 0 100%)  var(--gp),  /* left orange vert */
+		conic-gradient(from 0deg at 76.85% 50.37%, #fff0 0 25%, var(--c3) 0% 50%, #fff0 0 100%)  var(--gp),  /* right orange vert */
+		conic-gradient(from 0deg at 50% 73.33%, #fff0 0 16.66%, var(--c1) 0% 83.33%, #fff0 0 100%)  var(--gp),  /* middle black */
+		conic-gradient(from 0deg at 36.84% 56.29%, #fff0 0 50%, var(--c1) 0% 75%, #fff0 0 100%)  var(--gp),  /* left black middle */
+		conic-gradient(from 0deg at 63.15% 56.29%, #fff0 0 25%, var(--c1) 0% 50%, #fff0 0 100%)  var(--gp),  /* right black middle*/
+		conic-gradient(from 0deg at 50% 51.11%, #fff0 0 33.33%, var(--c2) 0% 66.66%, #fff0 0 100%)  var(--gp),  /* middle red */
+		conic-gradient(from 0deg at 50% 39.25%, #fff0 0 33.33%, var(--c1) 0% 66.66%, #fff0 0 100%)  var(--gp),  /* middle black */
+		conic-gradient(from 0deg at 50% 26.66%, #fff0 0 33.33%, var(--c3) 0% 66.66%, #fff0 0 100%)  var(--gp),  /* middle orange */
+		conic-gradient(from 0deg at 13.68% 5.92%, #fff0 0 66.66%, var(--c2) 0% 100%)  var(--gp),  /* left red top */
+		conic-gradient(from 0deg at 86.12% 5.92%, var(--c2) 0 33.33%, #fff0 0% 100%) var(--gp),   /* right red top */
+		conic-gradient(from 0deg at 28.42% 11.85%, #fff0 0 66.66%, var(--c1) 0% 100%)  var(--gp),  /* left black top */
+		conic-gradient(from 0deg at 71.58% 11.85%, var(--c1) 0 33.33%, #fff0 0% 100%) var(--gp),   /* right black top */
+		conic-gradient(from 0deg at 43.15% 17.77%, #fff0 0 66.66%, var(--c3) 0% 100%)  var(--gp), /* left orange top */
+		conic-gradient(from 0deg at 56.84% 17.77%, var(--c3) 0 33.33%, #fff0 0% 100%) var(--gp)   /* right orange top*/
+		;
+    background-color: var(--c1);
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* HEADER */
+.title h1 {
+    width: 50%;
+    max-width: 830px;
+    margin: auto;
+    padding: 20px;
+    background: #e35e13;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.global-grid {
+    width: 90%;
+    max-width: 1500px;
+    margin: 1em auto;
+
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(19,25px);
+    gap: 1em;
+}
+
+
+.global-grid > div {
+    background: #ecf0f1;
+    padding: 1em;
+    border: 2px solid #000000;
+}
+
+.global-grid > .container-poems {
+    grid-column: 1/5;
+    grid-row: 1/20;
+    background: #9a1f22;
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 5px;
+
+}
+
+.global-grid > .container-socials {
+    grid-column: 5/7;
+    grid-row: 1/8;
+    background: #9a1f22;
+}
+
+.global-grid > .container-drawings {
+    grid-column: 5/7;
+    grid-row: 8/20;
+    background: #9a1f22;
+}
+
+
+
+/*ventana emergente*/
+.emergent {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+/* contenido ventana emergente*/
+.emergent-content {
+    background-color: #9a1f22;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Estilos para el botón de cerrar */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.custom-button-poema {
+    font-weight: bold; 
+    background-color: #631415;
+    color: #f9d3f7; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.custom-button-poema:hover {
+    background-color: #df451f;
+}
+
+.custom-button-cuento {
+    font-weight: bold; 
+    background-color: #5e0103;
+    color: #f9d3f7; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.custom-button-cuento:hover {
+    background-color: #df451f;
+}
