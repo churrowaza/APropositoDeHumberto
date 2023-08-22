@@ -22,24 +22,3 @@ window.onclick = function(event) {
     }
 }
 
-var images = [
-    "AGNES.jpeg",
-    "AYQUEMELLO.jpeg",
-"INTERIOR.jpeg",
-"ITOOKTHEBLAME.jpeg",
-"MEMORYLANE.jpeg",
-"MIPIACI.jpeg",
-"NOPAINNOGAIN.jpeg",
-"PIZZATURNO.jpeg",
-"TEATRO.jpeg"
-    // Agregar más imágenes
-];
-
-var currentImageIndex = 0;
-var imageSlider = document.getElementById("image-slider");
-
-
-function cambiarImagen() {
-    imageSlider.style.backgroundImage = "url('" + images[currentImageIndex] + "')";
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-}
