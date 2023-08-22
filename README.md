@@ -1,4 +1,3 @@
 # APropositoDeHumberto
-webpage, poetry blog
 
-Learning how to create a webpage
+Blog personal de poesía, cuentos, dibujos y creatividad.
