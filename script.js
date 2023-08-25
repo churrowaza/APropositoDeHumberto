@@ -23,15 +23,15 @@ window.onclick = function(event) {
 }
 
 var images = [
-    "img/AGNES.jpeg",
-    "img/AYQUEMELLO.jpeg",
-    "img/INTERIOR.jpeg",
-    "img/ITOOKTHEBLAME.jpeg",
-    "img/MEMORYLANE.jpeg",
-    "img/MIPIACI.jpeg",
-    "img/NOPAINNOGAIN.jpeg",
-    "img/PIZZATURNO.jpeg",
-    "img/TEATRO.jpeg"
+    "img/AGNES.png",
+    "img/AYQUEMELLO.png",
+    "img/INTERIOR.png",
+    "img/ITAKETHEBLAME.png",
+    "img/MEMORYLANE.png",
+    "img/MIPIACI.png",
+    "img/NOPAINNOGAIN.png",
+    "img/PIZZATURNO.png",
+    "img/TEATRO.png"
     // Agregar más imágenes
 ];
 
